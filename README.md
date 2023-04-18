@@ -14,7 +14,7 @@ git clone https://github.com/oedokumaci/.dotfiles ~/.dotfiles
 ```
 
 
-2. You can run the setup script for steps 3,4.
+2. You can run the setup script for steps 3 and 4 below or do them manually.
 
 ```zsh
 python setup.py
@@ -23,7 +23,6 @@ python setup.py
 3. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```zsh
-# These could also be in an install script.
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -36,26 +35,23 @@ cd ~/.dotfiles && brew bundle
 ```
 
 
-4. Create symlinks in the Home directory to the real files in the repo.
+4. Create symlinks in the Home directory to the real files in the repo for each dotfile.
 
 ```zsh
-# There are better and less manual ways to do this;
-# investigate install scripts and bootstrapping tools.
-
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.some_dotfile ~/.some_dotfile
 ```
+
+
+## Notes
+- If you would like to keep your .dotfiles folder in a different location, you can use the setup script as is and later create a symlink to the .dotfiles folder in your home directory.
 
 
 ## To-do
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
-- Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
-- Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
 - Make a checklist of steps to decommission your computer before wiping your hard drive.
 - Create a [bootable USB installer for macOS](https://support.apple.com/en-us/HT201372).
 - Integrate other cloud services into your Dotfiles process (Dropbox, Google Drive, etc.).
-- Find inspiration and examples in other Dotfiles repositories at [dotfiles.github.io](https://dotfiles.github.io/).
 
 
 ## Credits
