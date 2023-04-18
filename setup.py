@@ -1,7 +1,7 @@
 import subprocess
 from pathlib import Path
 
-DOT_FILES = [".zshrc", ".gitconfig"]
+DOT_FILES = [".zshrc", ".gitconfig", ".tmux.conf"]
 
 if __name__ == "__main__":
     if (input("Install homebrew and the software in the brewfile? (Y/n): ") or "y") == "y":
