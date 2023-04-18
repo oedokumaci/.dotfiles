@@ -10,7 +10,7 @@ xcode-select --install
 2. Clone repo into new hidden directory.
 
 ```zsh
-git clone https://github.com/oedokumaci/.dotfiles ~/Projects/.dotfiles
+git clone https://github.com/oedokumaci/.dotfiles ~/.dotfiles
 ```
 
 
@@ -20,8 +20,8 @@ git clone https://github.com/oedokumaci/.dotfiles ~/Projects/.dotfiles
 # There are better and less manual ways to do this;
 # investigate install scripts and bootstrapping tools.
 
-ln -s ~/Projects/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/Projects/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 
 
@@ -34,10 +34,10 @@ ln -s ~/Projects/.dotfiles/.gitconfig ~/.gitconfig
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Then pass in the Brewfile location...
-brew bundle --file ~/Projects/.dotfiles/Brewfile
+brew bundle --file ~/.dotfiles/Brewfile
 
 # ...or move to the directory first.
-cd ~/Projects/.dotfiles && brew bundle
+cd ~/.dotfiles && brew bundle
 ```
 
 
