@@ -1,17 +1,22 @@
 import subprocess
+import os
 
-# Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew.
-subprocess.run(["xcode-select", "--install"], check=False)
+DOT_FILES = [".zshrc", ".gitconfig"]
 
-# Clone repo into new hidden directory.
-subprocess.run(["git", "clone", "https://github.com/oedokumaci/.dotfiles", "~/Projects/.dotfiles"])
+if __name__ == "__main__":
+    if (input("Install homebrew and the software in the brewfile? (Y/n): ") or "y") == "y":
+        # install homebrew
+        subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"], check=False)
 
-# Create symlinks in the Home directory to the real files in the repo.
-subprocess.run(["ln", "-s", "~/Projects/.dotfiles/.zshrc", "~/.zshrc"], check=False)
-subprocess.run(["ln", "-s", "~/Projects/.dotfiles/.gitconfig", "~/.gitconfig"], check=False)
+        # install software in the brewfile
+        subprocess.run(["brew", "bundle", "--file", "~/.dotfiles/Brewfile"], check=False)
 
-# Install Homebrew, followed by the software listed in the Brewfile.
-subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"], check=False)
+    for dot_file in DOT_FILES:
+        if (input(f"Install {dot_file}? (Y/n): ") or "y") == "y":            
+            # move the dotfile to .dotfiles
+            src_file = os.path.expanduser(f"~/{dot_file}")
+            dst_file = os.path.expanduser(f"~/.dotfiles/{dot_file}")
+            subprocess.run(["mv", src_file, dst_file], check=False)
 
-# Then pass in the Brewfile location...
-subprocess.run(["brew", "bundle", "--file", "~/Projects/.dotfiles/Brewfile"], check=False)
+            # create symlink in the home directory to the real file in the repo
+            subprocess.run(["ln", "-s", dst_file, src_file], check=False)
