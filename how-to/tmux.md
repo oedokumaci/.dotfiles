@@ -3,15 +3,15 @@
 Terminal multiplexer.
 
 ### Check if you have it already
-```sh
+```zsh
 which tmux
 ```
 ### Install
-```sh
+```zsh
 sudo apt-get install tmux
 ```
 or
-```sh
+```zsh
 brew install tmux
 ```
 
@@ -58,7 +58,7 @@ My config lives [here](../config.tmux).
 
 
 Recommended setting: open new panes in same directory
-```sh
+```zsh
 bind c new-window -c "#{$HOME}"
 bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
@@ -71,7 +71,7 @@ bind % split-window -h -c "#{pane_current_path}"
 ### Installing tmux plugins
 To install plugins:
 
-```sh
+```zsh
 # Clone tmux plugin manager
 git clone -q https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 

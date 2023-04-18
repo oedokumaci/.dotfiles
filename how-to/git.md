@@ -1,7 +1,7 @@
 # Git
 
 Get rid of branches already merged into master:
-```sh
+```zsh
 # Remove local branches
 git branch --merged origin/master | egrep -v 'master|pre-release|release' | xargs git branch -d
 
