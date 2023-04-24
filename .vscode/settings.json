@@ -3,7 +3,7 @@
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": ["--max-line-length=88", "--select=C,E,F,W,B", "--extend-ignore=B009,E203,E501,W503"],
-    "python.autoComplete.extraPaths": ["__pypackages__/3.10/lib"],
-    "python.analysis.extraPaths": ["__pypackages__/3.10/lib"],
-    "python.testing.pytestPath": "__pypackages__/3.10/bin/pytest"
+    "python.autoComplete.extraPaths": ["__pypackages__/${env:PYTHON_VER}/lib"],
+    "python.analysis.extraPaths": ["__pypackages__/${env:PYTHON_VER}/lib"],
+    "python.testing.pytestPath": "__pypackages__/${env:PYTHON_VER}/bin/pytest"
 }
