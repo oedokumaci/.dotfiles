@@ -22,9 +22,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliases
-
-if [ -n "$PYTHONPATH" ]; then
-    export PYTHONPATH=$(which python$PYTHON_VER)'/site-packages/pdm/pep582':$PYTHONPATH
-else
-    export PYTHONPATH=$(which python$PYTHON_VER)'/site-packages/pdm/pep582'
-fi
