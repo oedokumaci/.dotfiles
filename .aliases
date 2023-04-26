@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Setting up aliases..."
-alias ls='ls -lhat --color=always'
 
+# ls
+alias ls='ls -lhat --color=always'
 echo "ls='ls -lhat --color=always'"
