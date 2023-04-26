@@ -6,8 +6,6 @@ brew "cmatrix"
 # Improved top (interactive process viewer)
 brew "htop"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Terminal multiplexer
 brew "tmux"
