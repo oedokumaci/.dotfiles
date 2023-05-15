@@ -3,8 +3,8 @@
 echo "Setting up aliases..."
 
 # ls
-alias ls='ls -lhat --color=always'
-echo "ls='ls -lhat --color=always'"
+alias ls='ls -lha --color=always'
+echo "ls='ls -lha --color=always'"
 
 # gnu find
 alias find='gfind'
