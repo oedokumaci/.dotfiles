@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "Setting up aliases..."
+# echo "Setting up aliases..."
 
 # ls
 alias ls='ls -lha --color=always'
-echo "ls='ls -lha --color=always'"
+# echo "ls='ls -lha --color=always'"
 
 # gnu find
 alias find='gfind'
-echo "find='gfind'"
+# echo "find='gfind'"
