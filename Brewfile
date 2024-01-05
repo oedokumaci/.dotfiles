@@ -13,6 +13,8 @@ brew "python@3.10"
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Tree
+brew "tree"
 # Casks
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
