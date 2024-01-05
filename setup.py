@@ -8,10 +8,6 @@ if __name__ == "__main__":
         # install homebrew
         subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"], check=False)
 
-    if (input("Install oh-my-zsh? (Y/n): ") or "y") == "y":
-        # install oh-my-zsh
-        subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"], check=False)
-
     for dot_file in DOT_FILES:
         if (input(f"Install {dot_file}? (Y/n): ") or "y") == "y":
             # move the dotfile to .dotfiles
@@ -25,6 +21,10 @@ if __name__ == "__main__":
 
             # create symlink in the home directory to the real file in the repo
             subprocess.run(["ln", "-s", str(github_dot_file), str(local_dot_file)], check=False)
+
+    if (input("Install oh-my-zsh? (Y/n): ") or "y") == "y":
+        # install oh-my-zsh
+        subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"], check=False)
 
     if (input("Install the software in the brewfile? (Y/n): ") or "y") == "y":
         # install software in the brewfile
