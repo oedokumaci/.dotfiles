@@ -20,7 +20,9 @@ cask "google-chrome"
 cask "visual-studio-code"
 cask "zoom"
 cask "skype"
+cask "microsoft-outlook"
 cask "slack"
+cask "spotify"
 # Docker
 cask Docker
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
