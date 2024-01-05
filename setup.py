@@ -32,8 +32,12 @@ if __name__ == "__main__":
         subprocess.run(["brew", "bundle", "--file", str(Path.home() / ".dotfiles" / "Brewfile")], check=False)
 
     if (input("Your .dotfiles is kept at ~/.dotfiles. Do you want to create a symlink to it? (Y/n): ").casefold() or "y") == "y":
-        sym_dir = input("Enter the absolute path to the directory you want to create the symlink in: ")
-        # Create dir if not exists
-        sym_dir = Path(sym_dir)
+        sym_dir_input = input("Enter the absolute path to the directory you want to create the symlink in: ")
+        sym_dir = Path(sym_dir_input).expanduser()
         sym_dir.mkdir(parents=True, exist_ok=True)
-        subprocess.run(["ln", "-s", str(Path.home() / ".dotfiles"), sym_dir], check=False, shell=True)
+
+        dotfiles_path = Path.home() / ".dotfiles"
+        symlink_target = sym_dir / ".dotfiles"
+
+        # Create symlink
+        subprocess.run(["ln", "-s", str(dotfiles_path), str(symlink_target)], check=False)
