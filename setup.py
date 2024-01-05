@@ -36,4 +36,4 @@ if __name__ == "__main__":
         # Create dir if not exists
         sym_dir = Path(sym_dir)
         sym_dir.mkdir(parents=True, exist_ok=True)
-        subprocess.run(["ln", "-s", str(Path.home() / ".dotfiles"), sym_dir], check=False)
+        subprocess.run(["ln", "-s", str(Path.home() / ".dotfiles"), sym_dir], check=False, shell=True)
