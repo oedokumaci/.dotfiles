@@ -23,4 +23,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliases
 
+export PATH=~/bin:/opt/homebrew/bin:$PATH
 # echo "All done!"
