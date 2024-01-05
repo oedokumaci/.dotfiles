@@ -4,7 +4,8 @@ from pathlib import Path
 DOT_FILES = [".aliases", ".env", ".gitconfig", ".tmux.conf", ".vimrc", ".zshrc"]
 
 if __name__ == "__main__":
-    if (input("Install homebrew and the software in the brewfile? (Y/n): ") or "y") == "y":
+    install_homebrew = input("Install homebrew? (Y/n): " or "y")
+    if install_homebrew == "y":
         # install homebrew
         subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"], check=False)
 
@@ -26,7 +27,7 @@ if __name__ == "__main__":
         # install oh-my-zsh
         subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"], check=False)
 
-    if (input("Install the software in the brewfile? (Y/n): ") or "y") == "y":
+    if install_homebrew and (input("Install the software in the brewfile? (Y/n): ") or "y") == "y":
         # install software in the brewfile
         subprocess.run(["brew", "bundle", "--file", str(Path.home() / ".dotfiles" / "Brewfile")], check=False)
 
