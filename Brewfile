@@ -18,11 +18,14 @@ brew "tree"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
+cask "zoom"
+cask "skype"
+cask "slack"
 # Docker
 cask Docker
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
-# Rectangle is a window management app based on Spectacle, written in Swift.
-cask "rectangle"
 # Caffeine
 cask "caffeine"
+# Rectangle is a window management app based on Spectacle, written in Swift.
+cask "rectangle"
