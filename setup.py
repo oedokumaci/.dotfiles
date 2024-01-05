@@ -27,7 +27,7 @@ if __name__ == "__main__":
         # install oh-my-zsh
         subprocess.run(["/bin/bash", "-c", "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"], check=False)
 
-    if install_homebrew and (input("Install the software in the brewfile? (Y/n): ").casefold() or "y") == "y":
+    if (install_homebrew == "y") and (input("Install the software in the brewfile? (Y/n): ").casefold() or "y") == "y":
         # install software in the brewfile
         subprocess.run(["brew", "bundle", "--file", str(Path.home() / ".dotfiles" / "Brewfile")], check=False)
 
