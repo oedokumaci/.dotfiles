@@ -16,7 +16,9 @@ brew "watch"
 # Tree
 brew "tree"
 # Casks
-# Compact TeX distribution as alternative to the full TeX Live / MacTeX
-cask "basictex"
 cask "google-chrome"
 cask "visual-studio-code"
+# Docker
+cask Docker
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
+cask "basictex"
