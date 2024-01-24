@@ -25,8 +25,8 @@ cask "slack"
 cask "spotify"
 # Docker
 cask Docker
-# Compact TeX distribution as alternative to the full TeX Live / MacTeX
-cask "basictex"
+# MacTex
+cask "mactex-no-gui"
 # Caffeine
 cask "caffeine"
 # Rectangle is a window management app based on Spectacle, written in Swift.
