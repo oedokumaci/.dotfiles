@@ -31,6 +31,10 @@ if __name__ == "__main__":
         # install software in the brewfile
         subprocess.run(["brew", "bundle", "--file", str(Path.home() / ".dotfiles" / "Brewfile")], check=False)
 
+        # update Latex packages
+        subprocess.run(["sudo", "tlmgr", "update", "--self"], check=False)
+        subprocess.run(["sudo", "tlmgr", "update", "--all"], check=False)
+
     if (input("Your .dotfiles is kept at ~/.dotfiles. Do you want to create a symlink to it? (Y/n): ").casefold() or "y") == "y":
         sym_dir_input = input("Enter the absolute path to the directory you want to create the symlink in: ")
         sym_dir = Path(sym_dir_input).expanduser()

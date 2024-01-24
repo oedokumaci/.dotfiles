@@ -2,7 +2,9 @@
 
 du -ahx . | sort -rh | head -30
 
-find -iname "*.ipynb" -exec grep -l "20230111" {} \+
+find -iname "*.ipynb" -exec grep -l "20240101" {} \+
+
+---
 
 ### Show available aliases, builtins, keywords, functions
 
@@ -55,4 +57,10 @@ code -r $(git grep -l 'property\.name')
 
 ```zsh
 code --goto $(pre-commit run mypy -a 2>&1 | cut -d ':' -f 1-2 | grep '\.py')
+```
+
+### Update Latex packages
+
+```zsh
+sudo tlmgr update --self && sudo tlmgr update --all
 ```
