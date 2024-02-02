@@ -15,6 +15,8 @@ brew "tmux"
 brew "watch"
 # Tree
 brew "tree"
+# Latexindent
+brew "latexindent"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
