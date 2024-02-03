@@ -26,7 +26,7 @@ cask "microsoft-outlook"
 cask "slack"
 cask "spotify"
 # Docker
-cask Docker
+cask "docker"
 # MacTex
 cask "mactex-no-gui"
 # Caffeine
