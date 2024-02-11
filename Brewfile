@@ -17,6 +17,8 @@ brew "watch"
 brew "tree"
 # Latexindent
 brew "latexindent"
+# Act runs your GitHub Actions locally
+brew "act"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
