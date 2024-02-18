@@ -19,6 +19,8 @@ brew "tree"
 brew "latexindent"
 # Act runs your GitHub Actions locally
 brew "act"
+# libomp is an OpenMP runtime library, needed for LightGBM
+brew "libomp"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
