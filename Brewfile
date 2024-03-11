@@ -21,6 +21,8 @@ brew "latexindent"
 brew "act"
 # libomp is an OpenMP runtime library, needed for LightGBM
 brew "libomp"
+# GitHub Copilot on the command line
+brew "gh"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
