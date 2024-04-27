@@ -23,6 +23,10 @@ brew "act"
 brew "libomp"
 # GitHub Copilot on the command line
 brew "gh"
+# Kubectl
+brew "kubectl"
+# Minikube
+brew "minikube"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
