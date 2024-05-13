@@ -3,6 +3,10 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Console Matrix
 brew "cmatrix"
+# Nmap
+brew "nmap"
+# Findutils, may be installed by default
+# brew "findutils"
 # Modern replacement for 'ls'
 brew "exa"
 # Improved top (interactive process viewer)
