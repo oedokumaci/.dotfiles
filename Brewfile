@@ -39,6 +39,7 @@ cask "skype"
 cask "microsoft-outlook"
 cask "slack"
 cask "spotify"
+cask "wireshark"
 # Docker
 cask "docker"
 # MacTex
