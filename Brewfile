@@ -3,6 +3,8 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Console Matrix
 brew "cmatrix"
+# Core utils
+brew "coreutils"
 # Nmap
 brew "nmap"
 # Findutils, may be installed by default

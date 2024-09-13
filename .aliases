@@ -9,3 +9,7 @@ alias ls='ls -lha --color=always'
 # gnu find
 alias find='gfind'
 # echo "find='gfind'"
+
+# gnu timeout
+alias timeout='gtimeout'
+# echo "timeout='gtimeout'"
