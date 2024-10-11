@@ -33,6 +33,8 @@ brew "gh"
 brew "kubectl"
 # Minikube
 brew "minikube"
+# Ansible
+brew "ansible"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
