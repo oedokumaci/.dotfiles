@@ -13,3 +13,34 @@ alias find='gfind'
 # gnu timeout
 alias timeout='gtimeout'
 # echo "timeout='gtimeout'"
+
+# free equivalent
+alias free='function _free() {
+    if [ "$1" = "-h" ]; then
+        total=$(sysctl -n hw.memsize)
+        used=$(ps -A -o rss= | awk '\''{sum+=$1} END {print sum*1024}'\'')
+        free=$((total - used))
+        echo "           total       used         free"
+        awk -v total=$total -v used=$used -v free=$free '\''
+            function human(x) {
+                split("B KiB MiB GiB TiB PiB", v)
+                s=1; while (x>=1024) { x/=1024; s++ }
+                return sprintf("%.1f %s", x, v[s])
+            }
+            BEGIN {
+                printf "Mem:    %11s %11s %11s\n", human(total), human(used), human(free)
+            }
+        '\''
+    elif [ -z "$1" ]; then
+        total=$(sysctl -n hw.memsize);
+        used=$(ps -A -o rss= | awk '\''{sum+=$1} END {print sum*1024}'\'');
+        free=$((total - used));
+        echo "           total       used        free";
+        printf "Mem:%11.1f %11.1f %11.1f GiB\n" \
+            $((total/1024/1024/1024)) \
+            $((used/1024/1024/1024)) \
+            $((free/1024/1024/1024))
+    else
+        echo "Usage: free [-h]"
+    fi
+}; _free'
