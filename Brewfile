@@ -13,8 +13,10 @@ brew "nmap"
 brew "exa"
 # Improved top (interactive process viewer)
 brew "htop"
-# Interpreted, interactive, object-oriented programming language
+# Pythons
 brew "python@3.10"
+brew "python@3.12"
+brew "python@3.13"
 # Terminal multiplexer
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
