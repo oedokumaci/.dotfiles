@@ -37,6 +37,8 @@ brew "kubectl"
 brew "minikube"
 # Ansible
 brew "ansible"
+# Git LFS
+brew "git-lfs"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
