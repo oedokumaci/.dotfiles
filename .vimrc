@@ -26,3 +26,24 @@ inoremap jj <Esc>
 inoremap jk <Esc>
 set timeoutlen=500  " Shorten timeout for quicker Escape recognition
 
+" Leader stuff
+let mapleader = " "
+
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>            " Save and quit
+nnoremap <Leader>y "+y
+nnoremap <Leader>p "+p
+
+nnoremap <Leader>h ^
+nnoremap <Leader>l $
+nnoremap <Leader>j 20j
+nnoremap <Leader>k 20k
+
+nnoremap <Leader>bd :bd<CR>          " Delete buffer
+nnoremap <Leader>bn :bnext<CR>       " Next buffer
+nnoremap <Leader>bp :bprevious<CR>   " Previous buffer
+nnoremap <Leader>tn :tabnew<CR>      " New tab
+nnoremap <Leader>tc :tabclose<CR>    " Close tab
+nnoremap <Leader>to :tabonly<CR>     " Close other tabs
+
