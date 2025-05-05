@@ -44,3 +44,11 @@ alias free='function _free() {
         echo "Usage: free [-h]"
     fi
 }; _free'
+
+# cpython
+alias cpython='~/Projects/cpython/python.exe'
+
+# rot13
+alias rot13='tr a-zA-Z n-za-mN-ZA-M'
+alias rot5='tr 0-9 5-90-4'
+alias rot18='rot13 | rot5'
