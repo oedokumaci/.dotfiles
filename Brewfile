@@ -15,8 +15,8 @@ brew "exa"
 brew "htop"
 # Pythons
 brew "python@3.10"
-brew "python@3.12"
 brew "python@3.13"
+brew "python@3.14"
 # Terminal multiplexer
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
@@ -39,11 +39,13 @@ brew "minikube"
 brew "ansible"
 # Git LFS
 brew "git-lfs"
+# AWS CLI
+brew "awscli"
 # Casks
 cask "google-chrome"
 cask "visual-studio-code"
+cask "cursor"
 cask "zoom"
-cask "skype"
 cask "microsoft-outlook"
 cask "slack"
 cask "spotify"
