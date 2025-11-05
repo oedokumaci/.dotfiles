@@ -1,7 +1,6 @@
 import subprocess
 from pathlib import Path
 
-
 DOT_FILES = [
     ".aliases",
     ".env",

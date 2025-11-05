@@ -52,3 +52,6 @@ alias cpython='~/Projects/cpython/python.exe'
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 alias rot5='tr 0-9 5-90-4'
 alias rot18='rot13 | rot5'
+
+# brew refresh
+alias brew-refresh='brew update && brew upgrade && brew cleanup -s && brew doctor'

@@ -1,60 +1,35 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-# Console Matrix
+
+brew "act"
+brew "ansible"
+brew "awscli"
 brew "cmatrix"
-# Core utils
 brew "coreutils"
-# Nmap
-brew "nmap"
-# Findutils, may be installed by default
-# brew "findutils"
-# Modern replacement for 'ls'
-brew "exa"
-# Improved top (interactive process viewer)
+brew "findutils"
+brew "gh"
+brew "git-lfs"
 brew "htop"
-# Pythons
-brew "python@3.10"
+brew "kubectl"
+brew "minikube"
+brew "nmap"
+brew "python@3.12"
 brew "python@3.13"
 brew "python@3.14"
-# Terminal multiplexer
 brew "tmux"
-# Executes a program periodically, showing output fullscreen
-brew "watch"
-# Tree
 brew "tree"
-# Latexindent
-brew "latexindent"
-# Act runs your GitHub Actions locally
-brew "act"
-# libomp is an OpenMP runtime library, needed for LightGBM
-brew "libomp"
-# GitHub Copilot on the command line
-brew "gh"
-# Kubectl
-brew "kubectl"
-# Minikube
-brew "minikube"
-# Ansible
-brew "ansible"
-# Git LFS
-brew "git-lfs"
-# AWS CLI
-brew "awscli"
-# Casks
-cask "google-chrome"
-cask "visual-studio-code"
+brew "watch"
+
+cask "caffeine"
 cask "cursor"
-cask "zoom"
+cask "docker"
+cask "google-chrome"
+cask "mactex-no-gui"
 cask "microsoft-outlook"
+cask "rectangle"
 cask "slack"
 cask "spotify"
+cask "visual-studio-code"
 cask "wireshark"
-# Docker
-cask "docker"
-# MacTex
-cask "mactex-no-gui"
-# Caffeine
-cask "caffeine"
-# Rectangle is a window management app based on Spectacle, written in Swift.
-cask "rectangle"
+cask "zoom"
