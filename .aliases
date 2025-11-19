@@ -1,18 +1,13 @@
 #!/bin/bash
 
-# echo "Setting up aliases..."
-
 # ls
 alias ls='ls -lha --color=always'
-# echo "ls='ls -lha --color=always'"
 
 # gnu find
 alias find='gfind'
-# echo "find='gfind'"
 
 # gnu timeout
 alias timeout='gtimeout'
-# echo "timeout='gtimeout'"
 
 # free equivalent
 alias free='function _free() {
@@ -55,3 +50,6 @@ alias rot18='rot13 | rot5'
 
 # brew refresh
 alias brew-refresh='brew update && brew upgrade && brew cleanup -s && brew doctor'
+
+# vim
+alias v='vim'
