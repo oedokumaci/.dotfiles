@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# ls
-alias ls='ls -lha --color=always'
+# ls (using eza with type grouping)
+alias ls='eza -la --group-directories-first --sort=type --color=always'
 
 # gnu find
 alias find='gfind'
