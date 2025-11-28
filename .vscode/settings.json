@@ -1,58 +1,47 @@
 {
-    "jupyter.askForKernelRestart": false,
+    // Editor configuration
+    "workbench.colorTheme": "Default Dark Modern",
     "editor.inlineSuggest.enabled": true,
-    "remote.SSH.connectTimeout": 60,
-    "notebook.output.textLineLimit": 1000,
     "editor.suggest.showMethods": true,
     "editor.suggest.preview": true,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.snippetSuggestions": "top",
+
+    // Files configuration
+    "files.autoSaveDelay": 1000,
+    "files.autoSave": "afterDelay",
+
+    // Git configuration
     "git.autofetch": true,
     "git.confirmSync": false,
-    "files.autoSave": "afterDelay",
     "diffEditor.ignoreTrimWhitespace": false,
-    "redhat.telemetry.enabled": false,
+
+    // GitHub configuration
     "githubPullRequests.pullBranch": "never",
+    "redhat.telemetry.enabled": false,
     "window.zoomLevel": 1,
+
+    // Jupyter configuration
+    "jupyter.askForKernelRestart": false,
+    "notebook.output.textLineLimit": 1000,
+
+    // Extensions configuration
     "extensions.autoUpdate": "onlyEnabledExtensions",
     "cursor.cpp.disabledLanguages": ["scminput"],
-    
+
     // SSH configurations
-    "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
-    
-    // Terminal configuration (macOS)
+    "remote.SSH.connectTimeout": 60,
+    "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],    
+
+    // Terminal configuration
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.inheritEnv": false,
-    
-    // Python configuration
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    
-    // Ruff linter configuration
-    "ruff.enable": true,
-    "ruff.lint.enable": true,
-    "ruff.lint.ignore": ["E501"],
-    
-    // Python formatting and linting
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true,
-        "editor.rulers": [88],
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-        }
-    },
-    
-    // YAML configuration
-    "yaml.schemas": {
-        "file:///home/oed/.vscode-server/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i"
-    },
-    "cursorpyright.analysis.inlayHints.functionReturnTypes": true,
-    
+
     // Vim extension configuration
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
 
+    // LaTeX configuration
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
