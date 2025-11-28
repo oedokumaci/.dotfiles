@@ -40,6 +40,21 @@
     // Vim extension configuration
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
+    "vim.leader": "<space>",
+    "vim.timeout": 500,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": true,
+    // Editor settings (from .vimrc)
+    // These are not supported by the Vim extension yet
+    // so we need to set them manually.
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.autoIndent": "advanced",
+    "[python]": {
+        "editor.tabSize": 4
+    },
 
     // LaTeX configuration
     "latex-workshop.latex.tools": [
