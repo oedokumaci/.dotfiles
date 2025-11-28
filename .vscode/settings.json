@@ -10,6 +10,21 @@
     // Files configuration
     "files.autoSaveDelay": 1000,
     "files.autoSave": "afterDelay",
+    "files.associations": {
+        "*.example": "plaintext", // fallback
+        "*.zshrc.local": "shellscript",
+        "*.zsh.local": "shellscript",
+        "*.zprofile.local": "shellscript",
+        "*.bashrc.local": "shellscript",
+        "*.bash_profile.local": "shellscript",
+        "*.bash.local": "shellscript",
+        "*.json.example": "json",
+        "*.yaml.example": "yaml",
+        "*.yml.example": "yaml",
+        "*.toml.example": "toml",
+        "*.env.example": "properties",
+        "*.py.example": "python"
+    },
 
     // Git configuration
     "git.autofetch": true,

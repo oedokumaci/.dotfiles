@@ -1,11 +1,10 @@
 import subprocess
 from pathlib import Path
 
-DOT_FILES = [
+DOT_FILES = [  # these will be in HOME directory
     ".aliases",
     ".env",
     ".gitconfig",
-    ".gitignore",
     ".pentest_tools.sh",
     ".tmux.conf",
     ".vimrc",
